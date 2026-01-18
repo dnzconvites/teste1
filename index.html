@@ -1,3 +1,4 @@
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -72,22 +73,14 @@
 </head>
 <body>
 
-<video id="video" autoplay muted playsinline></video>
-  <img id="overlay" src="moldura.png" alt="Moldura" />
-  <div id="buttons">
-    <button id="switch-camera" title="Trocar câmera">🔄</button>
-    <button id="capture" title="Tirar foto">📸</button>
+  <div id="camera-wrap">
+    <video id="video" autoplay playsinline muted></video>
+    <img id="frame" src="moldura.png">
   </div>
-  <canvas id="canvas" style="display:none;"></canvas>
-  <div id="preview-container">
-    <img id="photo-preview" />
-    <button id="save-btn">Salvar na galeria</button>
-    <button id="retry-btn">Tirar outra</button>
-    <div id="instructions">
-      Se estiver no iPhone:<br>
-      Toque e segure a imagem e selecione “Salvar na Fototeca”.
-    </div>
 
+  <div id="buttons">
+    <img id="switchBtn" class="icon-btn" src="trocarcamera.png" title="Trocar câmera">
+    <img id="snapBtn" class="icon-btn" src="tirarfoto.png" title="Tirar Foto">
   </div>
 
   <a id="download" download="fotomoldurapersonalizada.png"></a>
